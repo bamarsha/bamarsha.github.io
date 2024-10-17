@@ -11,62 +11,67 @@
     <script src="https://kit.fontawesome.com/581d6627e3.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Brianna Marshall</h1>
+    <div class="intro">
+      <div class="column">
+        <h1>Brianna Marshall</h1>
 
-    <p class="tagline">PhD Student. Software Engineer.</p>
+        <p class="tagline">PhD Student. Software Engineer.</p>
 
-    <ul class="social fa-ul">
-      <li><span class="fa-li"><i class="fa-brands fa-github"></i></span><a href="https://github.com/bamarsha">GitHub</a></li>
-      <li><span class="fa-li"><i class="fa-brands fa-linkedin"></i></span><a href="https://www.linkedin.com/in/bmarsha/">LinkedIn</a></li>
-      <li><span class="fa-li"><i class="fa-regular fa-envelope"></i></span>first name at this domain</li>
-    </ul>
+        <ul class="social fa-ul">
+          <li><span class="fa-li"><i class="fa-brands fa-github"></i></span><a href="https://github.com/bamarsha">bamarsha</a></li>
+          <li><span class="fa-li"><i class="fa-brands fa-linkedin"></i></span><a href="https://www.linkedin.com/in/bmarsha/">bmarsha</a></li>
+          <li><span class="fa-li"><i class="fa-regular fa-envelope"></i></span>first name at domain</li>
+        </ul>
 
-    <ul class="affiliations fa-ul">
-      <li><span class="fa-li"><i class="bullet"></i></span><a href="https://prl.khoury.northeastern.edu">Programming Research Laboratory</a></li>
-      <li><span class="fa-li"><i class="bullet"></i></span><a href="https://www.khoury.northeastern.edu">Khoury College of Computer Sciences</a></li>
-      <li><span class="fa-li"><i class="fa-solid fa-building-columns"></i></span><a href="https://www.northeastern.edu">Northeastern University</a></li>
-      <li><span class="fa-li"><i class="fa-solid fa-earth-americas"></i></span>Boston, MA</li>
-    </ul>
+        <ul class="affiliations fa-ul">
+          <li><span class="fa-li"><i class="bullet"></i></span><a href="https://prl.khoury.northeastern.edu">Programming Research Laboratory</a></li>
+          <li><span class="fa-li"><i class="bullet"></i></span><a href="https://www.khoury.northeastern.edu">Khoury College of Computer Sciences</a></li>
+          <li><span class="fa-li"><i class="fa-solid fa-building-columns"></i></span><a href="https://www.northeastern.edu">Northeastern University</a></li>
+          <li><span class="fa-li"><i class="fa-solid fa-earth-americas"></i></span>Boston, MA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="column">
+      <p class="hello">👋 Hi.</p>
 
-    <p class="hello">👋 Hi.</p>
+      <p>
+      I'm a PhD student in computer science advised by <a href="https://www.khoury.northeastern.edu/~amal/">Amal Ahmed</a> and <a href="https://www.khoury.northeastern.edu/home/sholtzen/">Steven Holtzen</a> at Northeastern University.
+      My research interests revolve around how programming languages can be used to write more reliable software with less effort, taking into account practical concerns like performance and interactions between multiple languages.
+      I'm especially interested in type systems that provide strong guarantees against classes of errors that are difficult to debug, such as those involving effects or memory.
+      </p>
+      <p>
+      Previously, I was a software engineer at Microsoft in the Azure Quantum team.
+      During that time, I contributed to the compiler and language design for Q#, Microsoft's quantum programming language.
+      Highlights include leading the switch to Hindley-Milner-based type inference, the switch from statement-based to expression-based syntax, and a complete rewrite of the compiler in Rust, all while maintaining a high degree of backwards compatibility.
+      </p>
 
-    <p>
-    I'm a PhD student in computer science advised by <a href="https://www.khoury.northeastern.edu/~amal/">Amal Ahmed</a> and <a href="https://www.khoury.northeastern.edu/home/sholtzen/">Steven Holtzen</a> at Northeastern University.
-    My research interests revolve around how programming languages can be used to write more reliable software with less effort, taking into account practical concerns like performance and interactions between multiple languages.
-    I'm especially interested in type systems that provide strong guarantees against classes of errors that are difficult to debug, such as those involving effects or memory.
-    </p>
-    <p>
-    Previously, I was a software engineer at Microsoft in the Azure Quantum team.
-    During that time, I contributed to the compiler and language design for Q#, Microsoft's quantum programming language.
-    Highlights include leading the switch to Hindley-Milner-based type inference, the switch from statement-based to expression-based syntax, and a complete rewrite of the compiler in Rust, all while maintaining a high degree of backwards compatibility.
-    </p>
+      <h2>Timeline</h2>
 
-    <h2>Timeline</h2>
+      <dl class="timeline">
+        <dt>September 2024</dt>
+        <dd>I'm a teaching assistant for CS 4400 Programming Languages during the Fall 2024 semester.</dd>
+        <dt>September 2024</dt>
+        <dd>I gave a talk at HOPE 2024 about some work in progress: <a href="https://icfp24.sigplan.org/details/hope-2024-papers/6/An-Incremental-Approach-to-the-Semantics-of-Borrowing">An Incremental Approach to the Semantics of Borrowing</a>.</dd>
+        <dt>September 2023</dt>
+        <dd>My PhD at Northeastern University begins after leaving Microsoft in August.</dd>
+        <dt>January 2020</dt>
+        <dd>I started a full time job as a software engineer at Microsoft. In the Azure Quantum team, I worked on the compiler and language design for Q#.</dd>
+        <dt>December 2019</dt>
+        <dd>I graduated with a Bachelor of Science in Computer Science from the University of Washington.</dd>
+        <dt>June 2019</dt>
+        <dd>For the summer, I was an intern at Microsoft in the Azure Quantum team. My internship involved adding support for code completion to the Q# language server.</dd>
+      </dl>
 
-    <dl>
-      <dt>September 2024</dt>
-      <dd>I'm a teaching assistant for CS 4400 Programming Languages during the Fall 2024 semester.</dd>
-      <dt>September 2024</dt>
-      <dd>I gave a talk at HOPE 2024 about some work in progress: <a href="https://icfp24.sigplan.org/details/hope-2024-papers/6/An-Incremental-Approach-to-the-Semantics-of-Borrowing">An Incremental Approach to the Semantics of Borrowing</a>.</dd>
-      <dt>September 2023</dt>
-      <dd>My PhD at Northeastern University begins after leaving Microsoft in August.</dd>
-      <dt>January 2020</dt>
-      <dd>I started a full time job as a software engineer at Microsoft. In the Azure Quantum team, I worked on the compiler and language design for Q#.</dd>
-      <dt>December 2019</dt>
-      <dd>I graduated with a Bachelor of Science in Computer Science from the University of Washington.</dd>
-      <dt>June 2019</dt>
-      <dd>For the summer, I was an intern at Microsoft in the Azure Quantum team. My internship involved adding support for code completion to the Q# language server.</dd>
-    </dl>
+      <h2>Publications</h2>
 
-    <h2>Publications</h2>
+      <h3>Workshops</h3>
 
-    <h3>Workshops</h3>
-
-    <p>
-    <b><a href="https://icfp24.sigplan.org/details/hope-2024-papers/6/An-Incremental-Approach-to-the-Semantics-of-Borrowing">An Incremental Approach to the Semantics of Borrowing</a></b> (Extended Abstract)<br>
-    Brianna Marshall, Andrew Wagner, John Li, Olek Gierczak, Amal Ahmed<br>
-    <i>12th ACM SIGPLAN Workshop on Higher-Order Programming with Effects</i> (HOPE 2024)<br>
-    September 2, 2024 &mdash; Milan, Italy
-    </p>
+      <p>
+      <b><a href="https://icfp24.sigplan.org/details/hope-2024-papers/6/An-Incremental-Approach-to-the-Semantics-of-Borrowing">An Incremental Approach to the Semantics of Borrowing</a></b> (Extended Abstract)<br>
+      Brianna Marshall, Andrew Wagner, John Li, Olek Gierczak, Amal Ahmed<br>
+      <i>12th ACM SIGPLAN Workshop on Higher-Order Programming with Effects</i> (HOPE 2024)<br>
+      September 2, 2024 &mdash; Milan, Italy
+      </p>
+    </div>
   </body>
 </html>

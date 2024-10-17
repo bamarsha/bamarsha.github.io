@@ -1,5 +1,6 @@
 :root {
   --bg: #fbf1c7;
+  --bg1: #ebdbb2;
   --fg: #3c3836;
   --blue: #076678;
 
@@ -9,6 +10,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #282828;
+    --bg1: #3c3836;
     --fg: #ebdbb2;
     --blue: #83a598;
   }
@@ -25,18 +27,45 @@ body {
   line-height: 1.5;
   text-align: justify;
   hyphens: auto;
-
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 a {
     color: var(--blue);
 }
 
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+h3 {
+  font-size: 130%;
+}
+
+h2, p, ul, dl, .intro {
+  margin-bottom: 20px;
+}
+
 dt {
   font-weight: bold;
+}
+
+.intro {
+  background-color: var(--bg1);
+  padding: 20px 0;
+}
+
+.column {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .bullet:before {
@@ -48,8 +77,13 @@ dt {
   font-size: 125%;
 }
 
-.links {
-  display: flex;
+.social li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.affiliations {
+  margin-bottom: 0;
 }
 
 .hello {
