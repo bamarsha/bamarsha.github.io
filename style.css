@@ -4,6 +4,7 @@
   --fg: #3c3836;
   --blue: #076678;
 
+  --spacer: 20px;
   --fa-li-margin: 26px;
 }
 
@@ -49,8 +50,8 @@ h3 {
   font-size: 130%;
 }
 
-h2, p, ul, dl, .intro {
-  margin-bottom: 20px;
+h2, p, ul, dl {
+  margin-bottom: var(--spacer);
 }
 
 dt {
@@ -59,16 +60,17 @@ dt {
 
 .intro {
   background-color: var(--bg1);
-  padding: 20px 0;
+  margin-bottom: var(--spacer);
+  padding: var(--spacer) 0;
 }
 
 .column {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--spacer);
 }
 
-.bullet:before {
+.bullet::before {
   content: "\2022";
   display: inline-block;
 }
@@ -88,4 +90,40 @@ dt {
 
 .hello {
   font-size: 150%;
+}
+
+.timeline {
+  --point-radius: 12px;
+
+  position: relative;
+  margin-left: var(--point-radius);
+  padding-left: var(--spacer);
+}
+
+.timeline::before {
+  --border-width: 3px;
+
+  content: "";
+  position: absolute;
+  background-color: var(--fg);
+  top: 0;
+  bottom: 0;
+  left: calc(var(--border-width) / -2);
+  width: var(--border-width);
+  margin: 5px 0;
+}
+
+.timeline dt::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: var(--fg);
+  border-radius: var(--point-radius);
+  left: calc(-1 * var(--point-radius));
+  width: calc(2 * var(--point-radius));
+  height: calc(2 * var(--point-radius));
+}
+
+.timeline dd {
+  margin-bottom: var(--spacer);
 }
