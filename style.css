@@ -1,7 +1,25 @@
-body {
-  background-color: #282828;
-  color: #fbf1c7;
+:root {
+  --bg: #fbf1c7;
+  --fg: #3c3836;
+  --blue: #076678;
 
+  --fa-li-margin: 26px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #282828;
+    --fg: #ebdbb2;
+    --blue: #83a598;
+  }
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+body {
   font-family: "Nunito", sans-serif;
   font-size: 13pt;
   line-height: 1.5;
@@ -14,11 +32,24 @@ body {
 }
 
 a {
-  color: #83a598;
+    color: var(--blue);
 }
 
 dt {
   font-weight: bold;
+}
+
+.bullet:before {
+  content: "\2022";
+  display: inline-block;
+}
+
+.tagline {
+  font-size: 125%;
+}
+
+.links {
+  display: flex;
 }
 
 .hello {
