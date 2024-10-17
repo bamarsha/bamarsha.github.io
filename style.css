@@ -50,7 +50,7 @@ h3 {
   font-size: 130%;
 }
 
-h2, p, ul, dl {
+h2, h3, p, ul, dl {
   margin-bottom: var(--spacer);
 }
 
@@ -126,4 +126,20 @@ dt {
 
 .timeline dd {
   margin-bottom: var(--spacer);
+}
+
+.pub-title {
+  font-weight: bold;
+}
+
+.pub-venue {
+  font-style: italic;
+}
+
+.pub-date, .pub-place {
+  display: inline-block;
+}
+
+.pub-date::after {
+  content: " \2014";
 }
